@@ -1,0 +1,31 @@
+[java]
+style = "bright-yellow"
+symbol = " "
+
+[rust]
+style = "#ef4a00"
+symbol = " "
+
+
+[battery]
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+unknown_symbol = ""
+empty_symbol = ""
+format = "[$symbol $percentage]($style) "
+# disabled = false
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]  # "bold green" style when capacity is between 30% and 70%
+threshold = 70
+style = "bold blue"
+
+# when capacity is over 70%, the battery indicator will not be displayed
