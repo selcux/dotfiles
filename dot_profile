@@ -1,0 +1,29 @@
+export PATH="$PATH:$HOME/.emacs.d/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.npm-global/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:/storage/hyperledger/fabric-samples/test-network"
+export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
+
+export GOROOT=$(go env GOROOT)
+export GOPATH=$(go env GOPATH)
+export PATH="$PATH:$GOPATH/bin"
+
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/library"
+
+export PATH="$PATH:/usr/racket/bin"
+# language_server.sh path
+export PATH="$PATH:/usr/lib/elixir-ls"
+
+export FABRIC_NETWORK_CONFIG="/storage/hyperledger/fabric-samples/test-network/configtx/configtx.yaml"
+export FABRIC_NETWORK_ENV_SCRIPT="/storage/hyperledger/fabric-samples/test-network/scripts/envVar.sh"
+export PATH="$PATH:/storage/hyperledger/fabric-samples/bin"
+
+export PATH="$PATH:/home/selcuk/apps/kafka_2.13-2.7.0/bin"
+
+export EDITOR=nvim
+
+# opam configuration
+test -r /home/selcuk/.opam/opam-init/init.sh && . /home/selcuk/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+xdg-mime default okular.desktop application/pdf
